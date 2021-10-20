@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".page_fourth"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_page_fourth">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp"
+            android:text="Thuộc tính" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:paddingBottom="10dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="14dp"
+                    android:button="@null"
+                    android:backgroundTint="@color/blue"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:background="@drawable/round_border_radiobutton"
+                    android:text="Tất cả" />
+
+                <RadioButton
+                    android:id="@+id/radioButton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:button="@null"
+                    android:backgroundTint="@color/blue"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:background="@drawable/round_border_radiobutton"
+                    android:text="Convert" />
+
+                <RadioButton
+                    android:id="@+id/radioButton5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="14dp"
+                    android:button="@null"
+                    android:backgroundTint="@color/blue"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:background="@drawable/round_border_radiobutton"
+                    android:text="Sáng tác" />
+
+            </LinearLayout>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp"
+            android:text="Trạng thái" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:paddingBottom="10dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="14dp"
+                    android:button="@null"
+                    android:backgroundTint="@color/blue"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:background="@drawable/round_border_radiobutton"
+                    android:text="Tất cả" />
+
+                <RadioButton
+                    android:id="@+id/radioButton7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:button="@null"
+                    android:backgroundTint="@color/blue"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:background="@drawable/round_border_radiobutton"
+                    android:text="Đang ra" />
+
+                <RadioButton
+                    android:id="@+id/radioButton8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="14dp"
+                    android:button="@null"
+                    android:backgroundTint="@color/blue"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:background="@drawable/round_border_radiobutton"
+                    android:text="Hoàn thành" />
+
+            </LinearLayout>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp"
+            android:text="Số lượng chương" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:paddingBottom="10dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:autoSizeTextType="uniform"
+                    app:autoSizeMinTextSize="12sp"
+                    app:autoSizeMaxTextSize="100sp"
+                    app:autoSizeStepGranularity="2sp"
+                    android:layout_marginRight="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="14dp"
+                    android:button="@null"
+                    android:backgroundTint="@color/blue"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:background="@drawable/round_border_radiobutton"
+                    android:text="Tất cả" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:autoSizeTextType="uniform"
+                    app:autoSizeMinTextSize="12sp"
+                    app:autoSizeMaxTextSize="100sp"
+                    app:autoSizeStepGranularity="2sp"
+                    android:layout_marginRight="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="14dp"
+                    android:button="@null"
+                    android:backgroundTint="@color/blue"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:background="@drawable/round_border_radiobutton"
+                    android:text="1-100" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:autoSizeTextType="uniform"
+                    app:autoSizeMinTextSize="12sp"
+                    app:autoSizeMaxTextSize="100sp"
+                    app:autoSizeStepGranularity="2sp"
+                    android:layout_marginRight="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="14dp"
+                    android:button="@null"
+                    android:backgroundTint="@color/blue"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:background="@drawable/round_border_radiobutton"
+                    android:text="100-300" />
+
+
+            </LinearLayout>
+
+        </RadioGroup>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:gravity="top"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="16dp"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/bear"
+        android:paddingTop="10dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:gravity="center_horizontal"
+        android:text="Dm tri leader"
+        android:paddingBottom="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Danh sách truyện"
+            android:textSize="14sp"
+            style="?android:attr/borderlessButtonStyle"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:gravity="start"
+            android:drawableStart="@drawable/sach"
+            android:backgroundTint="@color/blue"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingVertical="10dp"
+            android:paddingBottom="20dp"
+            android:drawableLeft="@drawable/sach"
+            android:textColor="@color/white"
+            android:text="   Tủ truyện" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Truyện vừa đọc"
+            android:drawableLeft="@drawable/bound"
+            style="?android:attr/borderlessButtonStyle"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/blue"
+            android:textSize="14sp"
+            android:paddingHorizontal="50dp"
+            android:textColor="@color/white"
+            android:gravity="start"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Truyện đánh dấu"
+            android:textSize="14sp"
+            android:textAllCaps="false"
+            style="?android:attr/borderlessButtonStyle"
+            android:paddingHorizontal="50dp"
+            android:backgroundTint="@color/blue"
+            android:drawableLeft="@drawable/bound"
+            android:textColor="@color/white"
+            android:gravity="start"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Truyện đang theo dõi"
+            android:textSize="14sp"
+            android:paddingHorizontal="50dp"
+            android:textAllCaps="false"
+            style="?android:attr/borderlessButtonStyle"
+            android:backgroundTint="@color/blue"
+            android:drawableLeft="@drawable/bound"
+            android:textColor="@color/white"
+            android:gravity="start"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Truyện đã tải"
+            android:textSize="14sp"
+            android:paddingHorizontal="50dp"
+            android:textAllCaps="false"
+            style="?android:attr/borderlessButtonStyle"
+            android:backgroundTint="@color/blue"
+            android:drawableLeft="@drawable/bound"
+            android:textColor="@color/white"
+            android:gravity="left"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chat chit"
+                android:textSize="14sp"
+                android:textAllCaps="false"
+                style="?android:attr/borderlessButtonStyle"
+                android:backgroundTint="@color/blue"
+                android:drawableLeft="@drawable/sach"
+                android:textColor="@color/white"
+                android:gravity="left"/>
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:paddingLeft="16dp"
+            android:paddingVertical="10dp"
+            android:paddingBottom="20dp"
+            android:drawableLeft="@drawable/sach"
+            android:textColor="@color/white"
+            android:text="   Thông tin" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chia sẻ"
+            android:textSize="14sp"
+            android:paddingHorizontal="50dp"
+            android:textAllCaps="false"
+            style="?android:attr/borderlessButtonStyle"
+            android:backgroundTint="@color/blue"
+            android:drawableLeft="@drawable/bound"
+            android:textColor="@color/white"
+            android:gravity="left"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gửi thư góp ý"
+            android:textSize="14sp"
+            android:paddingHorizontal="50dp"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/blue"
+            android:drawableLeft="@drawable/bound"
+            android:textColor="@color/white"
+            style="?android:attr/borderlessButtonStyle"
+            android:gravity="left"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đánh giá ứng dụng"
+            android:textAllCaps="false"
+            android:paddingHorizontal="50dp"
+            android:backgroundTint="@color/blue"
+            style="?android:attr/borderlessButtonStyle"
+            android:textSize="14sp"
+            android:drawableLeft="@drawable/bound"
+            android:textColor="@color/white"
+            android:gravity="left"/>
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -17,4 +17,12 @@
     <string name="title_activity_page_sixth">page_sixth</string>
     <string name="title_activity_page">Page_Activity</string>
     <string name="title_activity_main2">MainActivity2</string>
+    <string name="login" />
+    <string name="username">UserName</string>
+    <string name="password">PassWord</string>
+    <string name="signuphere">SignUp</string>
+    <string name="signup" />
+    <string name="fullname" />
+    <string name="email">email</string>
+    <string name="loginhere" />
 </resources>

@@ -33,7 +33,7 @@ public class page_second extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         setSupportActionBar(binding.appBarPageSecond.toolbar);
-        
+
         DrawerLayout drawer = binding.drawerLayout;
         NavigationView navigationView = binding.navView;
         // Passing each menu ID as a set of Ids because each
@@ -62,9 +62,9 @@ public class page_second extends AppCompatActivity {
                 || super.onSupportNavigateUp();
     }
 
-    public void onclickimageview3(View view) {
+    /*public void onclickimageview3(View view) {
         ImageView imageView3;
-        imageView3 = findViewById(R.id.imageview3);
+        imageView3 = findViewById(R.id.imageview);
         imageView3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -73,5 +73,5 @@ public class page_second extends AppCompatActivity {
             }
         });
 
-    }
+    }*/
 }

@@ -24,7 +24,7 @@ public class Login extends AppCompatActivity {
 
     private EditText etEmail, etPassword;
     private String email, password;
-    private String URL = "http://192.168.10.1:8090/login/login.php";
+    private String URL = "http://127.0.0.1:8090/login/login.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

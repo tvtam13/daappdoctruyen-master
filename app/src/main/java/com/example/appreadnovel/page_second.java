@@ -33,7 +33,7 @@ public class page_second extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         setSupportActionBar(binding.appBarPageSecond.toolbar);
-        
+
         DrawerLayout drawer = binding.drawerLayout;
         NavigationView navigationView = binding.navView;
         // Passing each menu ID as a set of Ids because each
@@ -42,7 +42,7 @@ public class page_second extends AppCompatActivity {
                 R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow)
                 .setOpenableLayout(drawer)
                 .build();
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_page_second);
+        NavController navController = Navigation.findNavController(this, R.id.listview);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
 
@@ -57,14 +57,14 @@ public class page_second extends AppCompatActivity {
 
     @Override
     public boolean onSupportNavigateUp() {
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_page_second);
+        NavController navController = Navigation.findNavController(this, R.id.listview);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
     }
 
-    public void onclickimageview3(View view) {
+    /*public void onclickimageview3(View view) {
         ImageView imageView3;
-        imageView3 = findViewById(R.id.imageview3);
+        imageView3 = findViewById(R.id.imageview);
         imageView3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -73,5 +73,5 @@ public class page_second extends AppCompatActivity {
             }
         });
 
-    }
+    }*/
 }

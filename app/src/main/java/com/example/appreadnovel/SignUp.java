@@ -29,7 +29,7 @@ public class SignUp extends AppCompatActivity {
     private EditText etName, etEmail, etPassword, etReenterPassword;
     private TextView tvStatus;
     private Button btnRegister;
-    private String URL = "http://192.168.10.1:8090/login/register.php";
+    private String URL = "http://127.0.0.1:8090/login/register.php";
     private String name, email, password, reenterPassword;
 
     @Override

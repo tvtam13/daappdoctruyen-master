@@ -12,11 +12,11 @@
         android:layout_height="match_parent"
         android:orientation="horizontal">
 
-        <de.hdodenhof.circleimageview.CircleImageView
+        <TextView
             android:id="@+id/imageView"
             android:layout_width="100dp"
             android:layout_height="95dp"
-            android:src="@drawable/bear"
+            android:text="aaa: "
             />
 
         <LinearLayout

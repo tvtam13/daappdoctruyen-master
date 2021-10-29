@@ -9,6 +9,6 @@ import retrofit2.http.GET;
 
 public interface TruyenApi {
 
-    @GET("truyen/findall")
+    @GET("list.php")
     Call<List<Truyen>> findAll();
 }

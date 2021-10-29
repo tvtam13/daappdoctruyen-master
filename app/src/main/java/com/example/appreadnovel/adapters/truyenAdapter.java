@@ -48,8 +48,8 @@ public class truyenAdapter extends ArrayAdapter<Truyen> {
         viewHolder.getTentruyen.setText(truyen.getTen_truyen());
         viewHolder.getTacgia.setText(truyen.getTac_gia());
         viewHolder.getTrangthai.setText(truyen.getTrang_thai());
-        viewHolder.getchuong.setText(truyen.getSo_chuong());
-        viewHolder.getImageView.setImageResource(truyen.getHinh_anh());
+        viewHolder.getchuong.setText(String.valueOf(truyen.getSo_chuong()));
+        viewHolder.getImageView.setText(String.valueOf(truyen.getHinh_anh()));
             return convertView;
         }
         private  static  class  ViewHolder{
@@ -57,6 +57,6 @@ public class truyenAdapter extends ArrayAdapter<Truyen> {
             public static TextView getTacgia;
             public static TextView getTrangthai;
             public static TextView getchuong;
-            public static ImageView getImageView;
+            public static TextView getImageView;
         }
 }

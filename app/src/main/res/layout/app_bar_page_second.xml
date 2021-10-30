@@ -23,7 +23,7 @@
 
 
 
-            <TextView
+            <EditText
                 android:id="@+id/textView4"
                 android:layout_width="220dp"
                 android:layout_height="wrap_content"

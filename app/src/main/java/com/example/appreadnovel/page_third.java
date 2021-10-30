@@ -10,10 +10,19 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.appreadnovel.adapters.truyenAdapter;
+import com.example.appreadnovel.api.APIClient;
+import com.example.appreadnovel.api.TruyenApi;
+import com.example.appreadnovel.entities.Truyen;
+
+import java.util.ArrayList;
+
+import retrofit2.Retrofit;
+
 public class page_third extends AppCompatActivity {
     Button btn1, btn2;
-
-
+    TextView tvName,tvTheLoai,tvChuong,tvMota,tvTacgia;
+    TruyenApi methods;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,6 +44,22 @@ public class page_third extends AppCompatActivity {
             }
         });
 
+        tvName = findViewById(R.id.tentruyen);
+        tvTheLoai = findViewById(R.id.theloai);
+        tvChuong = findViewById(R.id.chuong);
+        tvMota = findViewById(R.id.mota);
+        tvTacgia = findViewById(R.id.tacgia);
+        methods = APIClient.getClient().create(TruyenApi.class);
+        Truyen truyens =(Truyen) getIntent().getExtras().get("article");
+        setData(truyens);
+    }
+
+    private void setData(Truyen truyens) {
+        tvName.setText(truyens.getTen_truyen());
+        tvTheLoai.setText(truyens.getThe_loai());
+        tvChuong.setText(String.valueOf(truyens.getSo_chuong()));
+        tvMota.setText(truyens.getMo_ta());
+        tvTacgia.setText(truyens.getTac_gia());
     }
 
     public void onclickimageview4(View view) {

@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-
+import com.squareup.picasso.Picasso;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
@@ -27,6 +27,11 @@ public class truyenAdapter extends ArrayAdapter<Truyen> {
         this.truyens = truyens;
     }
 
+    @Override
+    public Truyen getItem(int index) {
+        return this.truyens.get(index);
+    }
+
     @NonNull
     @Override
         public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
@@ -40,16 +45,21 @@ public class truyenAdapter extends ArrayAdapter<Truyen> {
             viewHolder.getTrangthai = convertView.findViewById(R.id.trangthai);
             viewHolder.getchuong = convertView.findViewById(R.id.chuong);
             viewHolder.getImageView = convertView.findViewById(R.id.imageView);
+            viewHolder.getTheLoai = convertView.findViewById(R.id.theloai);
+            viewHolder.getMota = convertView.findViewById(R.id.mota);
         }else {
 
             viewHolder = (ViewHolder) convertView.getTag();
         }
         Truyen truyen = truyens.get(position);
+        //Picasso
         viewHolder.getTentruyen.setText(truyen.getTen_truyen());
         viewHolder.getTacgia.setText(truyen.getTac_gia());
         viewHolder.getTrangthai.setText(truyen.getTrang_thai());
         viewHolder.getchuong.setText(String.valueOf(truyen.getSo_chuong()));
         viewHolder.getImageView.setText(String.valueOf(truyen.getHinh_anh()));
+        //viewHolder.getTheLoai.setText(truyen.getThe_loai());
+        //viewHolder.getMota.setText(truyen.getMo_ta());
             return convertView;
         }
         private  static  class  ViewHolder{
@@ -58,5 +68,7 @@ public class truyenAdapter extends ArrayAdapter<Truyen> {
             public static TextView getTrangthai;
             public static TextView getchuong;
             public static TextView getImageView;
+            public static TextView getTheLoai;
+            public static TextView getMota;
         }
 }

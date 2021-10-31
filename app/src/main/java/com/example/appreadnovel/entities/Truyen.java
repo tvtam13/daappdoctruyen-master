@@ -12,7 +12,7 @@ public class Truyen implements Serializable {
     @SerializedName("ten_truyen")
     private String ten_truyen;
     @SerializedName("hinh_anh")
-    private int hinh_anh;
+    private String hinh_anh;
     @SerializedName("tac_gia")
     private String tac_gia;
     @SerializedName("mo_ta")
@@ -45,11 +45,11 @@ public class Truyen implements Serializable {
         this.ten_truyen = ten_truyen;
     }
 
-    public int getHinh_anh() {
+    public String getHinh_anh() {
         return hinh_anh;
     }
 
-    public void setHinh_anh(int hinh_anh) {
+    public void setHinh_anh(String hinh_anh) {
         this.hinh_anh = hinh_anh;
     }
 

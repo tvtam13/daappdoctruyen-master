@@ -1,10 +1,13 @@
 package com.example.appreadnovel.adapters;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.os.AsyncTask;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import com.squareup.picasso.Picasso;
@@ -52,14 +55,12 @@ public class truyenAdapter extends ArrayAdapter<Truyen> {
             viewHolder = (ViewHolder) convertView.getTag();
         }
         Truyen truyen = truyens.get(position);
-        //Picasso
+        Picasso.get().load(truyen.getHinh_anh()).into(viewHolder.getImageView);
         viewHolder.getTentruyen.setText(truyen.getTen_truyen());
         viewHolder.getTacgia.setText(truyen.getTac_gia());
         viewHolder.getTrangthai.setText(truyen.getTrang_thai());
         viewHolder.getchuong.setText(String.valueOf(truyen.getSo_chuong()));
-        viewHolder.getImageView.setText(String.valueOf(truyen.getHinh_anh()));
-        //viewHolder.getTheLoai.setText(truyen.getThe_loai());
-        //viewHolder.getMota.setText(truyen.getMo_ta());
+        //viewHolder.getImageView.setText(truyen.getHinh_anh());
             return convertView;
         }
         private  static  class  ViewHolder{
@@ -67,8 +68,9 @@ public class truyenAdapter extends ArrayAdapter<Truyen> {
             public static TextView getTacgia;
             public static TextView getTrangthai;
             public static TextView getchuong;
-            public static TextView getImageView;
+            public static ImageView getImageView;
             public static TextView getTheLoai;
             public static TextView getMota;
+            public static EditText bitmap;
         }
 }

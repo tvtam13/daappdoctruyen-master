@@ -14,6 +14,7 @@ import com.example.appreadnovel.adapters.truyenAdapter;
 import com.example.appreadnovel.api.APIClient;
 import com.example.appreadnovel.api.TruyenApi;
 import com.example.appreadnovel.entities.Truyen;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -22,6 +23,7 @@ import retrofit2.Retrofit;
 public class page_third extends AppCompatActivity {
     Button btn1, btn2;
     TextView tvName,tvTheLoai,tvChuong,tvMota,tvTacgia;
+    ImageView img;
     TruyenApi methods;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +51,7 @@ public class page_third extends AppCompatActivity {
         tvChuong = findViewById(R.id.chuong);
         tvMota = findViewById(R.id.mota);
         tvTacgia = findViewById(R.id.tacgia);
+        img = findViewById(R.id.imageView);
         methods = APIClient.getClient().create(TruyenApi.class);
         Truyen truyens =(Truyen) getIntent().getExtras().get("article");
         setData(truyens);
@@ -60,6 +63,7 @@ public class page_third extends AppCompatActivity {
         tvChuong.setText(String.valueOf(truyens.getSo_chuong()));
         tvMota.setText(truyens.getMo_ta());
         tvTacgia.setText(truyens.getTac_gia());
+        Picasso.get().load(truyens.getHinh_anh()).into(img);
     }
 
     public void onclickimageview4(View view) {

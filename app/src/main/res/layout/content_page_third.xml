@@ -21,6 +21,7 @@
                 android:orientation="horizontal">
 
                 <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imageView"
                     android:layout_width="100dp"
                     android:layout_height="95dp"
                     android:src="@drawable/vay_tien_dai_de"/>

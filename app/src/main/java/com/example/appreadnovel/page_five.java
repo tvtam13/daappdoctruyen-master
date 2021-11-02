@@ -41,12 +41,14 @@ public class page_five extends AppCompatActivity {
 
     private void firstread(){
         NoidungApi noidungApi = APIClient.getClient().create(NoidungApi.class);
-        noidungApi.doctudau(id).enqueue(new Callback<List<Noidung>>() {
+        noidungApi.doctudau(id).enqueue(new Callback<Noidung>() {
             @Override
-            public void onResponse(Call<List<Noidung>> call, Response<List<Noidung>> response) {
+            public void onResponse(Call<Noidung> call, Response<Noidung> response) {
                 try {
                     if (response.isSuccessful()) {
-                        List<Noidung> noidungs = response.body();
+                        Noidung noidung = response.body();
+                        tvnoidung.setText(noidung.getNoi_dung_truyen());
+                        tvten.setText(noidung.getNoi_dung_chuong());
 
                     } else {
                         Toast.makeText(getApplication(), response.errorBody().toString(), Toast.LENGTH_SHORT).show();
@@ -57,7 +59,7 @@ public class page_five extends AppCompatActivity {
             }
 
             @Override
-            public void onFailure(Call<List<Noidung>> call, Throwable t) {
+            public void onFailure(Call<Noidung> call, Throwable t) {
                 Toast.makeText(getApplication(), t.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });

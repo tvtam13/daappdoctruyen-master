@@ -24,12 +24,13 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class page_third extends AppCompatActivity {
-    Button  btn2, btn3,btnpost,btnfirstread;
+    Button  btnds, btn3,btnpost,btnfirstread;
     TextView tvName, tvTheLoai, tvChuong, tvMota, tvTacgia;
     ImageView img;
     TruyenApi methods;
     String Trangthai,Hinhanh,Luotxemtuan;
     int id;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,14 +42,14 @@ public class page_third extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Truyen truyen = new Truyen();
-                truyen.setId_truyen(truyen.getId_truyen());
-                Intent intent = new Intent(page_third.this, page_chuongtruyen.class);
+                truyen.setId_truyen(id);
+                Intent intent = new Intent(page_third.this, page_five.class);
                 intent.putExtra("idtruyen",truyen);
                 startActivity(intent);
             }
         });
-        btn2 = findViewById(R.id.buttonds);
-        btn2.setOnClickListener(new View.OnClickListener() {
+        btnds = findViewById(R.id.buttonds);
+        btnds.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(page_third.this, page_five.class);
@@ -149,6 +150,5 @@ public class page_third extends AppCompatActivity {
         intent.putExtra("truyen",truyen);
         startActivity(intent);
     }
-
 
 }

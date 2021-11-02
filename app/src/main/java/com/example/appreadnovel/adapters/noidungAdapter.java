@@ -13,7 +13,7 @@ public class noidungAdapter extends ArrayAdapter<Noidung> {
 
     private Context context;
     private List<Noidung> noidungs;
-
+// chưa dùng
     public noidungAdapter(List<Noidung> noidungs, Context context) {
         super(context, R.layout.truyen_layout, noidungs);
         this.context = context;

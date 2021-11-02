@@ -11,5 +11,5 @@ import retrofit2.http.Path;
 public interface NoidungApi {
 
     @GET("noidung/first/{id}")
-    Call<List<Noidung>> doctudau(@Path("id") int id);
+    Call<Noidung> doctudau(@Path("id") int id);
 }

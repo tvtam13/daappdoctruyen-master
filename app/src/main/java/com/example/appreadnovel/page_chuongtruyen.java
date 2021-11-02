@@ -9,6 +9,8 @@ public class page_chuongtruyen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.content_page_doctruyen_chuong1);
+        setContentView(R.layout.app_bar_page_five);
+
+
     }
 }

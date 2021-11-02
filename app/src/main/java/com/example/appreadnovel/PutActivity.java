@@ -77,8 +77,7 @@ public class PutActivity extends AppCompatActivity {
                 try {
                     if (response.isSuccessful()) {
                         Toast.makeText(getApplication(), "sửa thành công ", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(PutActivity.this, page_third.class);
-                        finish();
+                        Intent intent = new Intent(PutActivity.this, MainActivity.class);
                         startActivity(intent);
                     } else {
                         Toast.makeText(getApplication(), response.errorBody().toString(), Toast.LENGTH_SHORT).show();

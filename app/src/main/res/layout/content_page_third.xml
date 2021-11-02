@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/app_bar_page_third"
-    android:padding="10dp"
-    android:orientation="vertical">
+    android:padding="10dp">
 
+<LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    android:orientation="vertical">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -115,7 +118,7 @@
                     android:src="@drawable/book_icon"/>
 
                 <Button
-                    android:id="@+id/buttondt"
+                    android:id="@+id/btndoctudau"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     style="?android:attr/borderlessButtonStyle"
@@ -124,7 +127,7 @@
                     android:gravity="center"
                     android:layout_gravity="center"
                     android:paddingBottom="10dp"
-                    android:text="Đọc truyện"/>
+                    android:text="Đọc từ đầu"/>
 
 
             </LinearLayout>
@@ -163,13 +166,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingTop="20dp"
-            android:textSize="14sp"
-            android:textColor="@color/black"
-            android:text="Giới thiệu:"/>
+
 
         <TextView
             android:id="@+id/mota"
@@ -184,37 +181,41 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/sua"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/blue"
+            android:layout_weight="1"
+            android:layout_gravity="bottom|center"
+            android:paddingHorizontal="50dp"
+            android:text="Sửa"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
         <Button
             android:id="@+id/xoa"
             style="?android:attr/borderlessButtonStyle"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/blue"
-            android:gravity="right"
-            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:layout_gravity="bottom|center"
             android:paddingHorizontal="50dp"
             android:text="Xóa"
             android:textAllCaps="false"
             android:textColor="@color/black"
             android:textSize="14sp" />
 
-        <Button
-            android:id="@+id/sua"
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/blue"
-            android:gravity="right"
-            android:layout_gravity="center"
-            android:paddingHorizontal="50dp"
-            android:text="Sửa"
-            android:textAllCaps="false"
-            android:textColor="@color/black"
-            android:textSize="14sp" />
+
 
     </LinearLayout>
-</LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

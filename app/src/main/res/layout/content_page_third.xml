@@ -118,7 +118,7 @@
                     android:src="@drawable/book_icon"/>
 
                 <Button
-                    android:id="@+id/buttondt"
+                    android:id="@+id/btndoctudau"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     style="?android:attr/borderlessButtonStyle"
@@ -127,7 +127,7 @@
                     android:gravity="center"
                     android:layout_gravity="center"
                     android:paddingBottom="10dp"
-                    android:text="Đọc truyện"/>
+                    android:text="Đọc từ đầu"/>
 
 
             </LinearLayout>

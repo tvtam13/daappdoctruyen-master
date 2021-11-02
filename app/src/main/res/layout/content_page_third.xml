@@ -197,7 +197,21 @@
             android:gravity="right"
             android:layout_gravity="center"
             android:paddingHorizontal="50dp"
-            android:text="Xoa"
+            android:text="Xóa"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/sua"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/blue"
+            android:gravity="right"
+            android:layout_gravity="center"
+            android:paddingHorizontal="50dp"
+            android:text="Sửa"
             android:textAllCaps="false"
             android:textColor="@color/black"
             android:textSize="14sp" />

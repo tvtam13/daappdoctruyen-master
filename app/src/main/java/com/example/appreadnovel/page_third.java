@@ -27,10 +27,11 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 
 public class page_third extends AppCompatActivity {
-    Button btn1, btn2, btn3;
+    Button btn1, btn2, btn3,btnpost;
     TextView tvName, tvTheLoai, tvChuong, tvMota, tvTacgia;
     ImageView img;
     TruyenApi methods;
+    String Trangthai,Hinhanh,Luotxemtuan;
     int id;
 
     @Override
@@ -61,7 +62,6 @@ public class page_third extends AppCompatActivity {
 
             }
         });
-
         tvName = findViewById(R.id.tentruyen);
         tvTheLoai = findViewById(R.id.theloai);
         tvChuong = findViewById(R.id.chuong);
@@ -71,6 +71,16 @@ public class page_third extends AppCompatActivity {
         methods = APIClient.getClient().create(TruyenApi.class);
         Truyen truyens = (Truyen) getIntent().getExtras().get("article");
         setData(truyens);
+
+
+        btnpost = findViewById(R.id.sua);
+        btnpost.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Postintentdata(view);
+            }
+        });
+
     }
 
     private void setData(Truyen truyens) {
@@ -81,6 +91,10 @@ public class page_third extends AppCompatActivity {
         tvTacgia.setText(truyens.getTac_gia());
         Picasso.get().load(truyens.getHinh_anh()).into(img);
         id = truyens.getId_truyen();
+        Trangthai = truyens.getTrang_thai();
+        Hinhanh = truyens.getHinh_anh();
+        Luotxemtuan = truyens.getLuot_xem_tuan();
+
     }
 
     public void onclickimageview4(View view)
@@ -103,8 +117,6 @@ public class page_third extends AppCompatActivity {
             public void onResponse(Call<Void> call, Response<Void> response) {
                 try {
                     if (response.isSuccessful()) {
-
-
                         Toast.makeText(getApplication(), "xoa thanh cong", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(page_third.this, MainActivity.class);
                         startActivity(intent);
@@ -121,5 +133,20 @@ public class page_third extends AppCompatActivity {
                 Toast.makeText(getApplication(), t.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
+    }
+    private void Postintentdata(View view){
+        Truyen truyen = new Truyen();
+        truyen.setId_truyen(id);
+        truyen.setTen_truyen((tvName.getText().toString()));
+        truyen.setHinh_anh(Hinhanh.toString());
+        truyen.setTac_gia(tvTacgia.getText().toString());
+        truyen.setMo_ta(tvMota.getText().toString());
+        truyen.setTrang_thai(Trangthai.toString());
+        truyen.setSo_chuong(Integer.parseInt(tvChuong.getText().toString()));
+        truyen.setThe_loai(tvTheLoai.getText().toString());
+        truyen.setLuot_xem_tuan(Luotxemtuan.toString());
+        Intent intent = new Intent(page_third.this, PostActivity.class);
+        intent.putExtra("truyen",truyen);
+        startActivity(intent);
     }
 }

@@ -11,7 +11,7 @@ import retrofit2.http.Path;
 
 public interface TruyenApi {
 
-    @GET("truyen/findall")
+    @GET("v3/6d6b4d12-b80d-4964-971e-6f79f3cddf78")
     Call<List<Truyen>> findAll();
     @GET("truyen/search/{keyword}")
     Call<List<Truyen>>search(@Path("keyword") String keyword);

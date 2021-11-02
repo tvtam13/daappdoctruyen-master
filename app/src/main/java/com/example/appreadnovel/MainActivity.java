@@ -28,16 +28,25 @@ import retrofit2.Response;
 public class MainActivity extends AppCompatActivity {
     ListView listViewTruyen;
     truyenAdapter truyenAdapters;
+    Button btnadd;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initView();
         loadData();
+        btnadd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,PostActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
     private void initView() {
         listViewTruyen = findViewById(R.id.listview);
+        btnadd = findViewById(R.id.addtruyen);
     }
 
 

@@ -14,7 +14,7 @@ public class APIClient {
         interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
         OkHttpClient client = new OkHttpClient.Builder().addInterceptor(interceptor).build();
         retrofit = new Retrofit.Builder()
-                .baseUrl("https://run.mocky.io/")
+                .baseUrl("http://10.0.2.2:9191/api/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(client)
                 .build();

@@ -19,58 +19,42 @@ import retrofit2.Response;
 
 public class PostActivity extends AppCompatActivity {
 
-    EditText edName, edImg,edTacgia,edMota,edTrangthai,edsochuong,edtheloai,edluotxemtuan;
-    Button btnupdate;
-    Integer id;
+    EditText editTen, editAnh,editTacgia,editMota,editTrangthai,editSochuong,editTheloai,editLuotxemtuan;
+    Button addbtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_post);
-
-        edName = findViewById(R.id.ettentruyen);
-        edImg = findViewById(R.id.ethinhanh);
-        edTacgia = findViewById(R.id.ettacgia);
-        edMota = findViewById(R.id.etmota);
-        edTrangthai = findViewById(R.id.ettrangthai);
-        edsochuong = findViewById(R.id.etsochuong);
-        edtheloai = findViewById(R.id.ettheloai);
-        edluotxemtuan = findViewById(R.id.etluotxemtuan);
-        btnupdate = findViewById(R.id.sua);
-        btnupdate.setOnClickListener(new View.OnClickListener() {
+        initview();
+        addbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Update(view);
+                Add(view);
             }
         });
-        loadData();
     }
-    private void loadData(){
-        Intent intent = getIntent();
-        Truyen truyen = (Truyen) intent.getSerializableExtra("truyen");
-        edName.setText(truyen.getTen_truyen());
-        edImg.setText(truyen.getHinh_anh());
-        edTacgia.setText(truyen.getTac_gia());
-        edMota.setText(truyen.getTac_gia());
-        edTrangthai.setText(truyen.getTrang_thai());
-        edMota.setText(truyen.getMo_ta());
-        edsochuong.setText(String.valueOf(truyen.getSo_chuong()));
-        edtheloai.setText(truyen.getThe_loai());
-        edluotxemtuan.setText(truyen.getLuot_xem_tuan());
-        id = truyen.getId_truyen();
+
+    private void initview(){
+        editTen = findViewById(R.id.addettentruyen);
+        editAnh = findViewById(R.id.addethinhanh);
+        editSochuong=findViewById(R.id.addetsochuong);
+        editTheloai=findViewById(R.id.addettheloai);
+        editLuotxemtuan=findViewById(R.id.addetluotxemtuan);
+        editTacgia=findViewById(R.id.addettacgia);
+        editMota=findViewById(R.id.addetmota);
+        editTrangthai=findViewById(R.id.addettrangthai);
+        addbtn = findViewById(R.id.btnAdd);
     }
-    private Update(View view)
-    {
+    private void Add(View view){
         Truyen truyen = new Truyen();
-        truyen.setId_truyen(Integer.parseInt(id.toString()));
-        truyen.setTen_truyen(edName.getText().toString());
-        truyen.setHinh_anh(edImg.getText().toString());
-        truyen.setTac_gia(edTacgia.getText().toString());
-        truyen.setMo_ta(edMota.getText().toString());
-        truyen.setTrang_thai(edTrangthai.getText().toString());
-        truyen.setMo_ta(edMota.getText().toString());
-        truyen.setSo_chuong(Integer.parseInt(edsochuong.getText().toString()));
-        truyen.setThe_loai(edtheloai.getText().toString());
-        truyen.setLuot_xem_tuan((edluotxemtuan.getText().toString()));
+        truyen.setTen_truyen(editTen.getText().toString());
+        truyen.setHinh_anh(editAnh.getText().toString());
+        truyen.setTac_gia(editTacgia.getText().toString());
+        truyen.setMo_ta(editMota.getText().toString());
+        truyen.setTrang_thai(editTrangthai.getText().toString());
+        truyen.setSo_chuong(Integer.parseInt(editSochuong.getText().toString()));
+        truyen.setThe_loai(editTheloai.getText().toString());
+        truyen.setLuot_xem_tuan((editLuotxemtuan.getText().toString()));
         TruyenApi truyenApi = APIClient.getClient().create(TruyenApi.class);
         truyenApi.save(truyen).enqueue(new Callback<Truyen>() {
             @Override
@@ -78,7 +62,7 @@ public class PostActivity extends AppCompatActivity {
                 try {
                     if (response.isSuccessful()) {
                         Toast.makeText(getApplication(), "thêm thành công ", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(PostActivity.this, page_third.class);
+                        Intent intent = new Intent(PostActivity.this, MainActivity.class);
                         startActivity(intent);
                     } else {
                         Toast.makeText(getApplication(), response.errorBody().toString(), Toast.LENGTH_SHORT).show();
@@ -94,4 +78,6 @@ public class PostActivity extends AppCompatActivity {
             }
         });
     }
+
+
 }

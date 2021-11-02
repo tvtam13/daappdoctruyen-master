@@ -13,66 +13,58 @@
 
 
         <EditText
-            android:id="@+id/addettentruyen"
+            android:id="@+id/ettentruyen"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:hint="Tên truyện"
             android:inputType="text"/>
 
         <EditText
-            android:id="@+id/addethinhanh"
+            android:id="@+id/ethinhanh"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:hint="Đường dẫn ảnh"
             android:inputType="text"/>
 
         <EditText
-            android:id="@+id/addettacgia"
+            android:id="@+id/ettacgia"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:hint="Tên tác giả"
             android:inputType="text"/>
 
         <EditText
-            android:id="@+id/addetmota"
+            android:id="@+id/etmota"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Mô tả"
             android:layout_marginTop="20dp"/>
 
         <EditText
-            android:id="@+id/addettrangthai"
+            android:id="@+id/ettrangthai"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Trạng thái truyện"
             android:layout_marginTop="20dp"/>
         <EditText
-            android:id="@+id/addetsochuong"
+            android:id="@+id/etsochuong"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Số chương"
             android:layout_marginTop="20dp"/>
         <EditText
-            android:id="@+id/addettheloai"
+            android:id="@+id/ettheloai"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Thể loại"
             android:layout_marginTop="20dp"/>
         <EditText
-            android:id="@+id/addetluotxemtuan"
+            android:id="@+id/etluotxemtuan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Lượt xem ngày"
             android:layout_marginTop="20dp"/>
 
         <Button
-            android:id="@+id/btnAdd"
+            android:id="@+id/btnPost"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:text="Thêm"
+            android:text="Lưu"
             android:layout_gravity="center_horizontal"/>
     </LinearLayout>
 

@@ -31,12 +31,11 @@
         <entry key="..\:/AndroidStudio/daappdoctruyen-master/app/src/main/res/layout/activity_login.xml" value="0.23645833333333333" />
         <entry key="..\:/AndroidStudio/daappdoctruyen-master/app/src/main/res/layout/activity_main.xml" value="0.25052083333333336" />
         <entry key="..\:/AndroidStudio/daappdoctruyen-master/app/src/main/res/layout/activity_page_second.xml" value="0.25052083333333336" />
-        <entry key="..\:/AndroidStudio/daappdoctruyen-master/app/src/main/res/layout/activity_post.xml" value="0.25052083333333336" />
         <entry key="..\:/AndroidStudio/daappdoctruyen-master/app/src/main/res/layout/activity_sign_up.xml" value="0.2" />
         <entry key="..\:/AndroidStudio/daappdoctruyen-master/app/src/main/res/layout/activity_sing_up.xml" value="0.25052083333333336" />
         <entry key="..\:/AndroidStudio/daappdoctruyen-master/app/src/main/res/layout/app_bar_page_five.xml" value="0.25052083333333336" />
         <entry key="..\:/AndroidStudio/daappdoctruyen-master/app/src/main/res/layout/app_bar_page_fourth.xml" value="0.25052083333333336" />
-        <entry key="..\:/AndroidStudio/daappdoctruyen-master/app/src/main/res/layout/app_bar_page_second.xml" value="0.264" />
+        <entry key="..\:/AndroidStudio/daappdoctruyen-master/app/src/main/res/layout/app_bar_page_second.xml" value="0.25052083333333336" />
         <entry key="..\:/AndroidStudio/daappdoctruyen-master/app/src/main/res/layout/app_bar_page_third.xml" value="0.5063157894736842" />
         <entry key="..\:/AndroidStudio/daappdoctruyen-master/app/src/main/res/layout/content_page_doctruyen_chuong1.xml" value="0.25052083333333336" />
         <entry key="..\:/AndroidStudio/daappdoctruyen-master/app/src/main/res/layout/content_page_five.xml" value="0.25052083333333336" />
@@ -66,12 +65,18 @@
         <entry key="..\:/Users/TOM/Downloads/APP/daappdoctruyen-master/app/src/main/res/layout/content_page_third.xml" value="0.3129528985507246" />
         <entry key="..\:/Users/TOM/Downloads/APP/daappdoctruyen-master/app/src/main/res/layout/test.xml" value="0.406478578892372" />
         <entry key="..\:/Users/TOM/Downloads/APP/daappdoctruyen-master/app/src/main/res/menu/activity_main_drawer.xml" value="0.20260416666666667" />
-        <entry key="..\:/Users/hoang/daappdoctruyen-mastery/app/src/main/res/drawable/ic_baseline_search.xml" value="0.3687179487179487" />
-        <entry key="..\:/Users/hoang/daappdoctruyen-mastery/app/src/main/res/layout/activity_post.xml" value="0.35833333333333334" />
-        <entry key="..\:/Users/hoang/daappdoctruyen-mastery/app/src/main/res/layout/activity_post2.xml" value="0.35833333333333334" />
-        <entry key="..\:/Users/hoang/daappdoctruyen-mastery/app/src/main/res/layout/activity_put.xml" value="0.35833333333333334" />
-        <entry key="..\:/Users/hoang/daappdoctruyen-mastery/app/src/main/res/layout/app_bar_page_second.xml" value="0.35833333333333334" />
-        <entry key="..\:/Users/hoang/daappdoctruyen-mastery/app/src/main/res/layout/content_page_second.xml" value="0.35833333333333334" />
+        <entry key="..\:/Users/TOM/StudioProjects/daappdoctruyen-master/app/src/main/res/layout/activity_page_second.xml" value="0.3625" />
+        <entry key="..\:/Users/TOM/StudioProjects/daappdoctruyen-master/app/src/main/res/layout/activity_post.xml" value="0.3625" />
+        <entry key="..\:/Users/TOM/StudioProjects/daappdoctruyen-master/app/src/main/res/layout/activity_post2.xml" value="0.3625" />
+        <entry key="..\:/Users/TOM/StudioProjects/daappdoctruyen-master/app/src/main/res/layout/activity_put.xml" value="0.3625" />
+        <entry key="..\:/Users/TOM/StudioProjects/daappdoctruyen-master/app/src/main/res/layout/app_bar_page_second.xml" value="0.3625" />
+        <entry key="..\:/Users/TOM/StudioProjects/daappdoctruyen-master/app/src/main/res/layout/app_bar_page_third.xml" value="0.3625" />
+        <entry key="..\:/Users/TOM/StudioProjects/daappdoctruyen-master/app/src/main/res/layout/content_page_five.xml" value="0.3625" />
+        <entry key="..\:/Users/TOM/StudioProjects/daappdoctruyen-master/app/src/main/res/layout/content_page_fourth.xml" value="0.3625" />
+        <entry key="..\:/Users/TOM/StudioProjects/daappdoctruyen-master/app/src/main/res/layout/content_page_second.xml" value="0.3625" />
+        <entry key="..\:/Users/TOM/StudioProjects/daappdoctruyen-master/app/src/main/res/layout/content_page_third.xml" value="0.3625" />
+        <entry key="..\:/Users/TOM/StudioProjects/daappdoctruyen-master/app/src/main/res/layout/nav_header_page_second.xml" value="0.3625" />
+        <entry key="..\:/Users/TOM/StudioProjects/daappdoctruyen-master/app/src/main/res/layout/truyen_layout.xml" value="0.3625" />
       </map>
     </option>
   </component>

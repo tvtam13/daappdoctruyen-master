@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         btnadd = findViewById(R.id.addtruyen);
     }
 
-
+//kêu trí vào, cái search nó đâu mất r
         private void loadData(){
         TruyenApi truyenApi = APIClient.getClient().create(TruyenApi.class);
         truyenApi.findAll().enqueue(new Callback<List<Truyen>>(){

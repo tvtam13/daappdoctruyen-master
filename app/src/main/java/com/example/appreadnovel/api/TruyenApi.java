@@ -26,7 +26,9 @@ public interface TruyenApi {
     Call<Truyen> save (@Body Truyen truyen);
 
 
-    // chờ tí viết tiếp api doc truyen
+    // chờ tí viết tiếp api doc truyenko bit
+// xoay nội dung ntn ?
+    // kêu trí đưa code
 
 }
 

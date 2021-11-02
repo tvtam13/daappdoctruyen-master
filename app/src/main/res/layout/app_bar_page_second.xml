@@ -21,7 +21,15 @@
             android:background="@color/blue"
             app:popupTheme="@style/Theme.AppReadNovel.PopupOverlay" >
 
-
+            <Button
+                android:id="@+id/addtruyen"
+                android:layout_gravity="right"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/blue"
+                android:drawableLeft="@drawable/ic_add"
+                tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
             <EditText
                 android:id="@+id/timkiem"
@@ -40,16 +48,6 @@
                 app:layout_anchor="@+id/appBarLayout"
                 app:layout_anchorGravity="center" />
 
-            <Button
-                android:id="@+id/buttonview1"
-                android:layout_gravity="right"
-
-                style="?android:attr/borderlessButtonStyle"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:backgroundTint="@color/blue"
-                android:drawableLeft="@drawable/open"
-                tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
             <Button
                 android:id="@+id/timkiem2"
                 android:layout_gravity="right"

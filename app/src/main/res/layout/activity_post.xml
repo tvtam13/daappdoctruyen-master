@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PutActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/addettentruyen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Tên truyện"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/addethinhanh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Đường dẫn ảnh"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/addettacgia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Tên tác giả"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/addetmota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mô tả"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/addettrangthai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Trạng thái truyện"
+            android:layout_marginTop="20dp"/>
+        <EditText
+            android:id="@+id/addetsochuong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Số chương"
+            android:layout_marginTop="20dp"/>
+        <EditText
+            android:id="@+id/addettheloai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Thể loại"
+            android:layout_marginTop="20dp"/>
+        <EditText
+            android:id="@+id/addetluotxemtuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Lượt xem ngày"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Thêm"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+
+</ScrollView>
